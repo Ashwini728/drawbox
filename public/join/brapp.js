@@ -19,11 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const isLoggedIn = await checkUserLoginStatus();
 
         if (isLoggedIn) {
+            try {
+                const response = await fetch(`/api/v1/rooms/${roomId}/join`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
             // Redirect to the room page if the user is logged in
             window.location.href = `/dashboard`; // Redirect to the room page with the roomId in the query string
+            } catch (error) {
+                console.log(error);
+            }
         } else {
             // Redirect to login page if the user is not logged in
-            window.location.href = '/login';
+            window.open('/login', '_blank').focus();
         }
     });
 });
