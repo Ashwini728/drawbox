@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./brapp.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Drawbox</div>
+        <div class="navbar-options">
+            <button id="logoutButton">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-section">
+            <h2>Rooms Joined</h2>
+            <div id="joinedRooms" class="room-list horizontal-scroll"></div>
+        </div>
+
+        <div class="card-section">
+            <h2>Rooms Created</h2>
+            <div id="createdRooms" class="room-list horizontal-scroll"></div>
+        </div>
+
+        <div class="card create-room">
+            <h2>Create New Room</h2>
+            <form id="createRoomForm">
+                <div class="form-group">
+                    <input type="text" id="roomName" placeholder="Room Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="roomDescription" placeholder="description" required>
+                </div>
+                <div class="form-group">
+                    <button class="create-room-button" type="submit">Create Room</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Checking Room Status -->
+    <div id="roomStatusModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Room Status</h3>
+            <div id="roomStatusContent"></div>
+        </div>
+    </div>
+</body>
+</html>

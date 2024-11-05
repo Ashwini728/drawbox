@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d8b4a0, #dbd3d8); /* Gradient background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #ffff; /* Light background for the card */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #223843; /* Dark color for the heading */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #223843; /* Dark color for labels */
+}
+
+.form-group input {
+    width: 100%; /* Full width of the card */
+    padding: 10px;
+    border: 1px solid #d8b4a0; /* Border color */
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d77a61; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #d8b4a0; /* Button hover color */
+}
+
+/* Mobile View (up to 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Add some padding on smaller screens */
+        width: 100%; /* Make sure container takes full width */
+    }
+
+    .card {
+        width: 100%; /* Ensure card takes full width */
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .form-group input, .form-group button {
+        width: 100%; /* Make inputs and button full-width */
+        font-size: 14px; /* Reduce font size for smaller devices */
+    }
+
+    .form-group button {
+        padding: 12px; /* Make the button more tap-friendly */
+    }
+
+    .card .room-card {
+        display: flex;
+        flex-direction: column; /* Stack room cards vertically */
+        margin: 10px 0;
+    }
+
+    .room-card .room {
+        width: 100%; /* Make room cards take full width */
+        margin-bottom: 10px; /* Space between cards */
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar .logout {
+        margin-top: 10px;
+    }
+
+    .create-room-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Form styles */
+    .form-group {
+        margin-bottom: 12px;
+    }
+}
+
+/* Tablet View (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%; /* Make sure content takes up a reasonable amount of space */
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .form-group input, .form-group button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .form-group button {
+        padding: 15px;
+    }
+
+    .room-card {
+        display: flex;
+        flex-direction: row; /* Align room cards horizontally */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .room-card .room {
+        width: 48%; /* Make room cards take up 48% width */
+        margin-bottom: 10px; /* Space between cards */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Space navbar items */
+    }
+
+    .create-room-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
