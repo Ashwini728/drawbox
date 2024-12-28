@@ -10,7 +10,8 @@
 - **Virtual Draw Rooms:** Create and manage virtual spaces for your events.  
 - **Easy Access:** Participants can join using URLs or QR codes, ensuring flexibility.  
 - **Real-Time Results:** Display draw results instantly to participants for transparency.  
-- **Participant Management:** Send invitations and track attendees seamlessly.  
+- **Participant Management:** Send invitations and track attendees seamlessly.
+-** Group Assignments:** Randomly assign participants into groups of specified sizes, perfect for team activities 
 - **Scheduled Draws:** Automate event timing for efficient management.  
 - **Customizable Settings:** Configure number of winners, prize types, and more.  
 - **Secure and Scalable:** Robust architecture to handle events of all sizes securely.  
